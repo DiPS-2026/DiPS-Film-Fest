@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules & Regulations | DiPS Film Fest 2026</title>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body { overflow-x: hidden; background: #1a0000; }
+
+        .page {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        #page1 { cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="page" id="page1">
+        <img src="assets/Rules And Regulations opening page.png" alt="Rules and Regulations">
+    </div>
+    <div class="page" id="page2">
+        <img src="assets/page 2.png" alt="Rules Page 2">
+    </div>
+
+    <script>
+        document.getElementById('page1').addEventListener('click', () => {
+            document.getElementById('page2').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
