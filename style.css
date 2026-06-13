@@ -595,7 +595,7 @@ body {
 
 .carousel-track {
     display: flex;
-    animation: carousel-scroll 22s linear infinite;
+    animation: carousel-scroll 12s linear infinite;
 }
 
 .carousel-track:hover {
@@ -603,7 +603,7 @@ body {
 }
 
 .carousel-slide {
-    min-width: calc(100% / 3);
+    min-width: calc(100% / 11);
     height: 220px;
     overflow: hidden;
     flex-shrink: 0;
